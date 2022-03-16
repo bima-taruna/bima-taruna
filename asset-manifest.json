@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef948e8c.css",
-    "main.js": "/static/js/main.19a017d7.js",
-    "index.html": "/index.html",
-    "main.ef948e8c.css.map": "/static/css/main.ef948e8c.css.map",
-    "main.19a017d7.js.map": "/static/js/main.19a017d7.js.map"
+    "main.css": "/bima-taruna/static/css/main.ef948e8c.css",
+    "main.js": "/bima-taruna/static/js/main.19a017d7.js",
+    "index.html": "/bima-taruna/index.html",
+    "main.ef948e8c.css.map": "/bima-taruna/static/css/main.ef948e8c.css.map",
+    "main.19a017d7.js.map": "/bima-taruna/static/js/main.19a017d7.js.map"
   },
   "entrypoints": [
     "static/css/main.ef948e8c.css",
