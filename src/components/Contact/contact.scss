@@ -1,0 +1,173 @@
+@import "../../global.scss";
+
+.contact {
+
+    background: radial-gradient(circle, rgba(199,174,238,1) 0%, rgba(148,187,233,1) 100%); 
+    display: flex;
+    position: relative;
+   
+    @media screen and (max-width:900px) {
+       flex-direction: column;
+    }
+    .dark & {
+        background: $dark-background;
+        color: $dark-color;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        .dark & {
+            background-color: $dark-background;
+            color: $dark-color;
+        }
+        h2{
+            font-size: 2vmax;
+        }
+        .icons{
+            &:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            overflow: hidden;
+        }
+        .isi{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 15px;
+            justify-content: space-around;
+            overflow: hidden;
+            @media screen and (max-width:900px) {
+                width: 80%;
+                height: 80%;
+                font-size: 10px;
+             }
+            ul{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 60%;
+                justify-content: space-evenly;
+                @media screen and (max-width:900px) {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 10px;
+                 }
+                
+                .item{
+                    
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    
+                }
+            }
+        }
+    }
+
+    .right{
+        flex: 1;
+        
+       .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+            .dark & {
+                background-color: $dark-surface;
+                color: $dark-color;
+            }
+        h2{
+            font-size: 2vmax;
+            margin-top: 35px;
+            
+        }
+
+        form{
+            height: 70%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            @media screen and (max-width:900px) {
+                width: 100%;
+                justify-content: space-around;
+             }
+            input{
+                width: 70%;
+                height: 30px;
+                font-size: 14px;
+                border-radius: 10px;
+                border: 1px solid rgb(196, 196, 196);
+                background-color: rgb(238, 238, 238);
+                @media screen and (max-width:900px) {
+                   
+                    height: 20px;
+                 }
+            }
+
+            textarea{
+                width: 70%;
+                height: 200px;
+                font-size: 14px;
+                border-radius: 10px;
+                border: 1px solid rgb(196, 196, 196);
+                background-color: rgb(238, 238, 238);
+                @media screen and (max-width:900px) {
+                    height: 150px;
+                 }
+            }
+
+            button{
+                width: 300px;
+                height: 30px;
+                color: white;
+                background-color: rgb(199,174,238);
+                border:none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+                .dark & {
+                    background-color: $dark-background;
+                    color: $dark-color;
+                }
+                @media screen and (max-width:900px) {
+                    width: 70%;
+                 }
+                &:hover{
+                    opacity: 0.5;
+                    background-color: $mainColor;
+                    .dark & {
+                        background-color: $dark-border;
+                        color: $dark-color;
+                    }
+                }
+            }
+            span{
+                color: green;
+                .dark & {
+                    color: $dark-color;
+                }
+            }
+        }
+
+       }
+
+        
+        
+        
+    }
+}

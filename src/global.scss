@@ -1,0 +1,25 @@
+$mainColor:rgb(2, 2, 138);
+$dark-background:rgb(0, 0, 0);
+$dark-color:rgb(255, 255, 255);
+$dark-surface:rgb(75, 75, 75);
+$dark-border:rgb(155, 155, 155);
+$sm-width: 768px;
+$md-width: 900px;
+$vs-width:480px;
+@mixin mobile {
+    @media (max-width:#{$sm-width}) {
+        @content
+    }
+}
+
+@mixin md-mobile {
+    @media (max-width:#{$md-width}) {
+        @content
+    }
+}
+
+@mixin vs-mobile{
+    @media (max-width:#{$vs-width}) {
+        @content
+    }
+}

@@ -1,0 +1,103 @@
+@import "../../global.scss";
+
+
+.navbar {
+    width: 100%;
+    height: 11%;
+    background-color: white;
+    color: $mainColor;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease;
+    overflow: hidden;
+    @include md-mobile {
+        height: 8%;
+    }
+    .dark & {
+        background-color: $dark-surface;
+        color: $dark-color;
+        border-bottom: 1px solid $dark-border;
+    }
+    .wrapper {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        
+        .left {
+            .logo{
+                font-size: clamp(2rem,2vmax,3vmax);
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        
+        .center {
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+            align-items: center;
+            animation: all 0.5s ease;
+            .switchMode{
+                display: flex;
+                &:hover{
+                    cursor: pointer;
+                    opacity:0.5;
+                }
+            }
+           
+            a {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                font-size: 1vmax;
+                padding: 5px 2em;
+                position: absolute;
+                
+                .dark & {
+                    background-color: $dark-surface;
+                    color: $dark-color;
+                    
+                }
+                &:link, :visited{
+                    color: inherit;
+                }
+    
+                &:hover{
+                    border-top: 2px solid $mainColor; 
+                    .dark & {
+                        border-top: 2px solid $dark-color;
+                    }
+                }
+            } 
+        }  
+    }
+    &.active{
+        background-color: $mainColor;
+        color: white;
+        .dark & {
+            background-color: $dark-surface;
+            color: $dark-color;
+        }
+        .hamburger {
+            
+            span {
+                
+                &:first-child {
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                   
+                }
+                &:last-child {
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+   }
+}

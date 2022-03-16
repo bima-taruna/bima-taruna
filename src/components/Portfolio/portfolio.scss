@@ -1,0 +1,135 @@
+@import '../../global.scss';
+.portfolio{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    .dark & {
+        background-color: $dark-background;
+        color: $dark-color;
+    }
+    h2 {
+        font-size: 3vmax;
+    }
+
+    ul{
+        margin: 5px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include md-mobile {
+            margin: 10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    // .pageNumber{
+    //     list-style: none;
+    //     display: flex;
+    //     position: absolute;
+    //     top: 190%;
+    //     li{
+    //         padding: 5px 10px;
+    //         border: 1px solid $mainColor;
+    //         cursor: pointer;
+
+    //         &.active {
+    //             background-color: $mainColor;
+    //             color: white;
+    //         }
+
+    //         button{
+    //             background-color: transparent;
+    //             border: none;
+    //             color: $mainColor;
+    //             font-size: 1rem;
+    //             cursor: pointer;
+                
+    //             &:hover{
+    //                 background-color: $mainColor;
+    //                 color: white;
+    //             }
+
+    //             &:focus{
+    //                 outline: none;
+    //             }
+    //         }
+    //     }
+
+
+    }
+    .container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: all 1s ease;
+        @include md-mobile{
+            width: 100%;
+        }
+       
+        .item{
+            width: 240px;
+            height: 200px;
+            border-radius: 20px;
+            border:1px solid rgb(236, 236, 236);
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            
+            @include md-mobile{
+                width: 200px;
+                height: 150px;
+                margin: 10px 20px;
+                flex-wrap: wrap;
+            }
+
+            @include mobile{
+                width: 130px;
+                height: 100px;
+                margin: 10px 20px;
+                flex-wrap: wrap;
+            }
+            h3 {
+                position: absolute;
+                font-size: 1.5vmax;
+                overflow:hidden;
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
+                
+            }
+            &:hover{
+                background-color: $mainColor;
+                .dark & {
+                    background-color: $dark-surface;
+                    color: $dark-color;
+                }
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+            }
+           
+            
+            
+          
+        }
+    }
