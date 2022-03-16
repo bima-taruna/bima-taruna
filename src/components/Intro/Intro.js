@@ -4,6 +4,8 @@ import Particles from 'react-tsparticles';
 import { init } from 'ityped';
 import options from './config';
 import options2 from './config2';
+import img from '../../assets/down-dark.png';
+import img2 from '../../assets/down.png';
 import { useEffect,useRef } from 'react';
 export default function Intro({mode,setMode}) {
     const textRef = useRef()
@@ -27,7 +29,7 @@ export default function Intro({mode,setMode}) {
                 <h3>I can  <span ref={textRef}></span></h3>
             </div>
             <a href="#portfolio">
-                {mode==='dark' ? <img src="assets/down-dark.png" alt=""/> :  <img src="assets/down.png" alt=""/>}
+                {mode==='dark' ? <img src={img} alt=""/> :  <img src={img2} alt=""/>}
             </a>
         </div>
         )

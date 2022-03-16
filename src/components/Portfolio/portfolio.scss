@@ -14,7 +14,8 @@
         font-size: 36px;
 
         @include vs-mobile{
-            margin-top: 30px;
+            font-size: 25px;
+            margin-top: 40px;
         }
     }
 

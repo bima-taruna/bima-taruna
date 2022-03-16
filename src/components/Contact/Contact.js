@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-import {Home,Call,Email,LinkedIn} from '@material-ui/icons'
-import { Link } from '@mui/material'
+import {Home,Call,Email,LinkedIn,GitHub} from '@material-ui/icons'
+import { Link} from '@mui/material'
 import './contact.scss'
 
 export default function Contact() {
@@ -41,9 +41,17 @@ export default function Contact() {
                     
                     </ul>
                 <div className="icons">
+                    <div  className="kiri">
                     <Link href="https://www.linkedin.com/in/bima-taruna-0a382b201" target="_blank">
                       <LinkedIn style={{ fontSize:40,color:'white' }}/>
                     </Link>
+                    </div>
+                    <div title="go to this project github" className="kanan">
+                    <Link href="https://github.com/bima-taruna/bima-taruna" target="_blank">
+                      <GitHub style={{ fontSize:40,color:'white' }}/>
+                    </Link>
+                    </div>
+                    
                 </div>
                 </div>
             </div>
