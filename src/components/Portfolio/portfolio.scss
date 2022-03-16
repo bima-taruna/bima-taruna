@@ -11,7 +11,11 @@
         color: $dark-color;
     }
     h2 {
-        font-size: 3vmax;
+        font-size: 36px;
+
+        @include vs-mobile{
+            margin-top: 30px;
+        }
     }
 
     ul{

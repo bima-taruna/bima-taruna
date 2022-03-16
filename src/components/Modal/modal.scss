@@ -21,6 +21,10 @@
         @include md-mobile{
             height: 500px;
         }
+
+        @include vs-mobile{
+            height: 250px;
+        }
        
         .Body{
             display: flex;
