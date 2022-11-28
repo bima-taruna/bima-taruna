@@ -12,7 +12,7 @@
     }
     h2 {
         font-size: 36px;
-
+        margin-top: 2em;
         @include vs-mobile{
             font-size: 25px;
             margin-top: 40px;
