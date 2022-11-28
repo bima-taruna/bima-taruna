@@ -56,6 +56,10 @@
                 padding: 5px 2em;
                 position: absolute;
                 
+                li {
+                    overflow:hidden;
+                }
+                
                 .dark & {
                     background-color: $dark-surface;
                     color: $dark-color;
